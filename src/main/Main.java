@@ -26,6 +26,7 @@ public class Main {
             Kontroler.getInstance().odrediSlicnost(izvestaj);    //pronalazi slicne korisnike
             Kontroler.getInstance().predvidiPCC();   //vrsi predvidjanje
 //            Kontroler.getInstance().preporuka(k.getKorisnikID());     //daje preporuku
+            Kontroler.getInstance().izracunajRMSE(); //racuna preciznost
 
             izvestaj.close();
         } catch (IOException ex) {

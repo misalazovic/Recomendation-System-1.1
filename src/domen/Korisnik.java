@@ -5,7 +5,7 @@
 package domen;
 
 import java.util.HashMap;
-import util.Zaokruzivanje;
+import util.Matematika;
 
 /**
  *
@@ -50,7 +50,7 @@ public class Korisnik {
         }
 
         if (brojac != 0) {
-            prosecnaOcena = Zaokruzivanje.zaokruzi((double) suma / (double) brojac, 2);
+            prosecnaOcena = Matematika.zaokruzi((double) suma / (double) brojac, 2);
         }
     }
 

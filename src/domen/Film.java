@@ -6,7 +6,7 @@ package domen;
 
 import java.util.ArrayList;
 import java.util.List;
-import util.Zaokruzivanje;
+import util.Matematika;
 
 /**
  *
@@ -57,7 +57,7 @@ public class Film {
         }
 
         if (brojac != 0) {
-            prosecnaOcena = Zaokruzivanje.zaokruzi((double) suma / (double) brojac, 2);
+            prosecnaOcena = Matematika.zaokruzi((double) suma / (double) brojac, 2);
         }
     }
 
