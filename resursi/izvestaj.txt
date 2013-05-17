@@ -1,0 +1,3 @@
+Parametri
+	Broj ocena korisnika: max=100, min=3
+	Minimalni stepen slicnosti: 0.2, minimalni broj filmova ocenjenih od strane oba korisnika: 10
