@@ -1,0 +1,2 @@
+This is a Product Recomendation System project that I developed for purposes of Data Mining course on Faculty of Organizational Sciences, so comments, class and method names are written in Serbian.
+It relies on Pearson Coefficient of Correlation, training and testing are done on part of Netflix dataset that can be found in resursi folder.
