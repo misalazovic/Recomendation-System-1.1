@@ -4,8 +4,6 @@
  */
 package main;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import kontroler.Kontroler;
 
 /**
@@ -15,22 +13,22 @@ import kontroler.Kontroler;
 public class Main {
 
     public static void main(String[] args) {
-        FileWriter izvestaj;
-        try {
-            izvestaj = new FileWriter("resursi/izvestaj.txt");
-            Kontroler.getInstance().ucitajFilmove();     //kreira filmove iz fajla movie_titles.txt
-//            Kontroler.getInstance().ucitajKorisnike();    //kreira korisnike iz fajla ratings.training
-            Kontroler.getInstance().ucitajKorisnikeITest();
-            Kontroler.getInstance().obradiKorisnike();     //obradjuje statistiku za korisnike
-            Kontroler.getInstance().obradiFilmove();     //obradjuje statistiku za filmove
-            Kontroler.getInstance().odrediSlicnost(izvestaj);    //pronalazi slicne korisnike
-            Kontroler.getInstance().predvidiPCC();   //vrsi predvidjanje
-//            Kontroler.getInstance().preporuka(k.getKorisnikID());     //daje preporuku
-            Kontroler.getInstance().izracunajRMSE(); //racuna preciznost
+        Kontroler.getInstance().ucitajFilmove();     //kreira filmove iz fajla movie_titles.txt
 
-            izvestaj.close();
-        } catch (IOException ex) {
-            System.err.println("Greska u izvestaju: " + ex.getMessage());
-        }
+//        Kontroler.getInstance().ucitajKorisnike();    //kreira korisnike iz fajla ratings.all
+        Kontroler.getInstance().ucitajKorisnikeITest(); //kreira korisnike za trening i korisnike za test
+
+        Kontroler.getInstance().obradiKorisnike();     //obradjuje statistiku za korisnike
+        Kontroler.getInstance().obradiFilmove();     //obradjuje statistiku za filmove
+        Kontroler.getInstance().odrediSlicnost();    //pronalazi slicne korisnike
+
+//        Kontroler.getInstance().predvidiPCC();   //vrsi predvidjanje za korisnike iz test seta
+//        Kontroler.getInstance().izracunajRMSE(); //racuna preciznost
+        Kontroler.getInstance().predvidiPCC(55555);
+
+        Kontroler.getInstance().preporuka(55555);     //daje preporuku
+        //korisnik 55555 je dao ocenu 5 Staloneovim filmovima (Rambo: First Blood Part II, Rambo III: Ultimate Edition,
+        //Rocky II, Rocky III, Rocky V), a ocenu 4 su dobile komedije (Chappelle's Show: Season 1, Airplane II: The Sequel,
+        //Mr. Bean: The Whole Bean, The Pink Panther)
     }
 }

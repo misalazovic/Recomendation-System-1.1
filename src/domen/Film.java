@@ -67,6 +67,6 @@ public class Film {
 
     @Override
     public String toString() {
-        return "(" + godina + ") " + naslov + ", prosecna ocena: " + prosecnaOcena;
+        return "(" + godina + ") " + naslov;
     }
 }
