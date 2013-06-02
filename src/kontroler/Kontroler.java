@@ -124,10 +124,9 @@ public class Kontroler {
     }
 
     /**
-     * Parsira fajl "ratings.all", u 20% slucajeva kreira objekat klase
-     * KorisnikTest i dodaje ga u HashMapu korisniciTestSet, a u ostalim
-     * slucajevima kreira objekat klase Korisnik, dodaje ga u HashMapu korisnici
-     * i dodaje njegove ocene u HashMapu filmovi
+     * Parsira fajl "ratings.all", ucitava korisnika i u 20% slucajeva ga dodaje
+     * ga u HashMapu korisniciTestSet, a u ostalim slucajevima, dodaje ga u
+     * HashMapu korisnici i dodaje njegove ocene u HashMapu filmovi
      */
     public void ucitajKorisnikeITest() {
         System.out.println("Ucitavanje korisnika i testcase-ova");

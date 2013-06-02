@@ -22,11 +22,11 @@ public class Main {
         Kontroler.getInstance().obradiFilmove();     //obradjuje statistiku za filmove
         Kontroler.getInstance().odrediSlicnost();    //pronalazi slicne korisnike
 
-//        Kontroler.getInstance().predvidiPCC();   //vrsi predvidjanje za korisnike iz test seta
-//        Kontroler.getInstance().izracunajRMSE(); //racuna preciznost
-        Kontroler.getInstance().predvidiPCC(55555);
+        Kontroler.getInstance().predvidiPCC();   //vrsi predvidjanje za korisnike iz test seta
+        Kontroler.getInstance().izracunajRMSE(); //racuna preciznost
+//        Kontroler.getInstance().predvidiPCC(55555);
 
-        Kontroler.getInstance().preporuka(55555);     //daje preporuku
+//        Kontroler.getInstance().preporuka(55555);     //daje preporuku
         //korisnik 55555 je dao ocenu 5 Staloneovim filmovima (Rambo: First Blood Part II, Rambo III: Ultimate Edition,
         //Rocky II, Rocky III, Rocky V), a ocenu 4 su dobile komedije (Chappelle's Show: Season 1, Airplane II: The Sequel,
         //Mr. Bean: The Whole Bean, The Pink Panther)
